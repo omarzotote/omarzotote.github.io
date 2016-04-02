@@ -12,7 +12,7 @@
         <div style="margin:50px auto 0px auto;">
             <svg
                  id="spiral"
-           viewBox="0 0 918.09567 872.37552">
+           viewBox="-30 0 918.09567 872.37552">
              <g
      inkscape:label="Capa 1"
      inkscape:groupmode="layer"
@@ -31,10 +31,11 @@
        sodipodi:t0="0"
        d="m 325.0325,734.54547 c 13.28232,15.37952 -14.17825,25.49201 -25.56176,22.07608 -30.84862,-9.25694 -32.95068,-49.79156 -18.5904,-73.19961 25.68716,-41.87151 84.49542,-42.69391 120.83746,-15.10472 53.3334,40.48825 52.76568,119.68445 11.61903,168.47531 -54.84201,65.03055 -155.04757,62.97984 -216.11315,8.13335 -76.84481,-69.0187 -73.26812,-190.49413 -4.64767,-263.751 83.10855,-88.72389 225.98778,-83.59941 311.38885,-1.16199 100.6422,97.14965 93.95772,261.51081 -2.3237,359.0267 C 390.48046,1051.6255 204.58772,1043.3737 94.976615,933.23021 -29.570493,808.07824 -19.746387,600.62038 104.27168,478.92782 243.4012,342.40716 472.44794,353.80673 606.21192,491.70856 754.71529,644.80574 741.73794,895.45881 589.94549,1041.2867" />
   </g>
-            <image xlink:href="profile.png" x="300px" y="260px" height="300px" width="300px"/>
+            <image xlink:href="profile.png" x="270px" y="260px" height="300px" width="300px"/>
             </svg>
         </div>
         <div style="margin:0 auto;"><h1 style="padding:0;margin:0;font-weight:300;font-family: Roboto Mono ;">Hello!</h1><h2 style="padding:0;margin:0;font-weight:300;font-family: Roboto Mono ;">I'm Omar Salazar</h2></div>
+        
         <link href='https://fonts.googleapis.com/css?family=Roboto+Mono:400,100,300' rel='stylesheet' type='text/css'>
         <script   src="https://code.jquery.com/jquery-2.2.2.min.js"   integrity="sha256-36cp2Co+/62rEAAYHLmRCPIych47CvdM+uTBJwSzWjI="   crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.4.1/snap.svg-min.js"></script>
@@ -57,23 +58,10 @@
         </style>
         <script>
             $(document).ready(function(){
-              var svg   = document.querySelector("svg");
-                var svgns = "http://www.w3.org/2000/svg";
-              // get the center
-              var el = document.querySelector("path");
-              var bbox = el.getBoundingClientRect();
               var center = {
                  x:330,
                  y: 700
               };
-                // create the dot center IMPORTANT
-                //document.write(center.y);
-              /*var dot = document.createElementNS(svgns, "circle");
-              console.log(dot);
-              dot.setAttribute("cx", center.x);
-              dot.setAttribute("cy", center.y);
-              dot.setAttribute("r", 10);
-              svg.appendChild(dot);*/
                 
                 // Sun vars
                 // Idealy, load sun via external file to keep HTML clean
@@ -94,6 +82,5 @@
                 }
             });
         </script>
-        <p></p>
     </body>
 </html>
