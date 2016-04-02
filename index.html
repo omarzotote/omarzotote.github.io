@@ -6,47 +6,7 @@
         <meta name="description" content="Welcome to my website. I'm Omar Salazar, a freelancer fullstack developer">
         <meta name="keywords" content="HTML,CSS,XML,JavaScript,Omar Salazar,Omar,Salazar,Omar Salazar Aguascalientes,Omar Salazar México,Omar Salazar Mexico,omar salazar">
         <meta name="author" content="Omar Salazar">
-        <script   src="https://code.jquery.com/jquery-2.2.2.min.js"   integrity="sha256-36cp2Co+/62rEAAYHLmRCPIych47CvdM+uTBJwSzWjI="   crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.4.1/snap.svg-min.js"></script>
     </head>
-    <style>
-        @media screen and (min-width:992px){
-            svg{
-                width: 30%;
-            }
-        }
-        @media screen and (max-width:992px) and (min-width:768px){
-            svg{
-                width: 60%;
-            }
-        }
-        @media screen and (max-width:768px){
-            svg{
-                width: 100%;
-            }
-        }
-        
-    </style>
-    <script>
-        $(document).ready(function(){
-            // Sun vars
-            // Idealy, load sun via external file to keep HTML clean
-            var spiral = Snap.select('#spiral');
-            var spiralPath = spiral.select('#yolo');
-            raysAnimation();
-            // Infinite animation for the sun rays
-            function raysAnimation(){
-                spiralPath.stop().animate(
-                    { transform: '0,360,360'}, // Basic rotation around a point. No frills.
-                    2000, // Nice slow turning rays
-                    function(){ 
-                        spiralPath.attr({ transform: 'rotate(360 360 360)'}); // Reset the position of the rays.
-                        raysAnimation(); // Repeat this animation so it appears infinite.
-                    }
-                );
-            }
-        });
-    </script>
     <body style="text-align:center;font-family: 'Roboto Mono', ;">
         <div style="margin:50px auto 0px auto;">
             <svg
@@ -74,5 +34,44 @@
         </div>
         <div style="margin:0 auto;"><h1 style="padding:0;margin:0;font-weight:300;font-family: Roboto Mono ;">Hello!</h1><h2 style="padding:0;margin:0;font-weight:300;font-family: Roboto Mono ;">I'm Omar Salazar</h2></div>
         <link href='https://fonts.googleapis.com/css?family=Roboto+Mono:400,100,300' rel='stylesheet' type='text/css'>
+        <script   src="https://code.jquery.com/jquery-2.2.2.min.js"   integrity="sha256-36cp2Co+/62rEAAYHLmRCPIych47CvdM+uTBJwSzWjI="   crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.4.1/snap.svg-min.js"></script>
+        <style>
+            @media screen and (min-width:992px){
+                svg{
+                    width: 30%;
+                }
+            }
+            @media screen and (max-width:992px) and (min-width:768px){
+                svg{
+                    width: 60%;
+                }
+            }
+            @media screen and (max-width:768px){
+                svg{
+                    width: 100%;
+                }
+            }
+        </style>
+        <script>
+            $(document).ready(function(){
+                // Sun vars
+                // Idealy, load sun via external file to keep HTML clean
+                var spiral = Snap.select('#spiral');
+                var spiralPath = spiral.select('#yolo');
+                raysAnimation();
+                // Infinite animation for the sun rays
+                function raysAnimation(){
+                    spiralPath.stop().animate(
+                        { transform: '0,360,360'}, // Basic rotation around a point. No frills.
+                        2000, // Nice slow turning rays
+                        function(){ 
+                            spiralPath.attr({ transform: 'rotate(360 360 360)'}); // Reset the position of the rays.
+                            raysAnimation(); // Repeat this animation so it appears infinite.
+                        }
+                    );
+                }
+            });
+        </script>
     </body>
 </html>
