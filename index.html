@@ -11,6 +11,7 @@
         <meta property="og:type" content="website" />
         <meta property="og:url" content="http://omarsalazars.com/" />
         <meta property="og:image" content="http://omarsalazars.com/profile.png" />
+        <meta property="og:app_id" content="1587412451576668" />
     </head>
     <body style="text-align:center;font-family: 'Roboto Mono', ;">
         <div class="home">
@@ -92,6 +93,12 @@
                 </a>
             </div>
         </div>
+        <div
+  class="fb-like"
+  data-share="true"
+  data-width="450"
+  data-show-faces="true">
+</div>
         <link href='https://fonts.googleapis.com/css?family=Roboto+Mono:400,100,300' rel='stylesheet' type='text/css'>
         <script   src="https://code.jquery.com/jquery-2.2.2.min.js"   integrity="sha256-36cp2Co+/62rEAAYHLmRCPIych47CvdM+uTBJwSzWjI="   crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.4.1/snap.svg-min.js"></script>
@@ -191,6 +198,21 @@
                     $('html, body').animate({scrollTop:$(window).height()*2}, 'slow');
                 });
             });
+            window.fbAsyncInit = function() {
+                FB.init({
+                  appId      : '1587412451576668',
+                  xfbml      : true,
+                  version    : 'v2.5'
+                });
+              };
+
+              (function(d, s, id){
+                 var js, fjs = d.getElementsByTagName(s)[0];
+                 if (d.getElementById(id)) {return;}
+                 js = d.createElement(s); js.id = id;
+                 js.src = "//connect.facebook.net/en_US/sdk.js";
+                 fjs.parentNode.insertBefore(js, fjs);
+               }(document, 'script', 'facebook-jssdk'));
         </script>
     </body>
 </html>
