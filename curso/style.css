@@ -1,0 +1,160 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+}
+#frame
+{
+        position:fixed;
+        height:100vh;/*150vh*/
+        width:100vw;
+        overflow-x: hidden;
+        overflow-y: hidden;
+}
+a{
+    color: blue;
+}
+/*sliding navigation between the slides*/
+.contain {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left:0;
+    height:100vh;
+    list-style-type: none;
+    -webkit-transform-style: preserve-3d;/*YAY lag is fixed on firefox*/
+  -ms-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.contain>li{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    float: left;
+    width: 100vw;
+    height: 100%;
+    color: #FFF;
+    text-align: center;
+}
+@media screen and (min-width: 992px){
+  .yolo{
+    width: 40%;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px){
+  .yolo{
+    width: 65%;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 768px){
+  .yolo{
+    width: 100%;
+    padding: 0 20px;
+    margin:0;
+  }
+}
+.yolo{
+  list-style-position: inside;
+}
+.yolo li{
+  width: 90%;
+  height: auto;
+  margin: 0;
+  padding:0;
+  list-style-type: circle;
+  display: block;
+  text-align: justify;
+}
+@media screen and (max-width: 768px){
+  h1{
+    font-weight: bolder;
+  }
+  .tree{
+    width: 60vw;
+  }
+  .merge{
+    width: 60vw;
+  }
+  h1,h2,h3,h4,h5,h6{
+    font-size: 1em;
+  }
+  .contact-info{
+    margin: 4vh 0 4vh 0;
+  }
+  .contact-info-text{
+    padding: 0;
+  }
+  .contact-info-text h3{
+    margin: 5px 0;
+  }
+  .contact-info-text img{
+    width: 20px;
+    height:20px;
+  }
+  .title{
+    margin: 30vh 0 5vh 0;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px){
+  .tree{
+    width: 40vw;
+  }
+  .merge{
+    width: 20vw;
+  }
+  .contact-info-text img{
+    width: 30px;
+    height:30px;
+  }
+  .title{
+    margin: 30vh 0 5vh 0;
+  }
+}
+@media screen and (min-width: 992px){
+  .contact-info-text img{
+    width: 40px;
+    height:40px;
+  }
+  .tree{
+    width: 30vw;
+  }
+  .merge{
+    width: 20vw;
+  }
+  .title{
+    margin: 15vh 0 5vh 0;
+  }
+}
+.title{color:black;}
+.authors{
+  color:black;
+  font-weight: lighter;
+  margin: 0 0 5vh 0;
+}
+h1,h2,h3,h4,h5,h6{
+  font-family: Roboto Mono ;
+}
+.info{
+  margin-top: 10vh;
+}
+.merge{
+  margin: 5vh 0 0 0;
+}
+.contact-info-text img{
+  display:inline;
+}
+.contact-info-text h6{
+  padding: 0;
+  display: inline;
+  margin:0;
+}
+.products{
+  margin: 15vh 0 0 0;
+}
+.contacto{
+  margin: 5vh 0;
+}
+/*end of sliding navigation between the slides*/
